@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Dark Games</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body { background-color: #000; color: #fff; }
+        .admin-header { background-color: #1a1a1a; border-bottom: 2px solid #0f0; padding: 1rem; margin-bottom: 2rem; }
+        .stats-card {
+            background: #1a1a1a;
+            border: 1px solid #0f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        }
+        .table { background-color: #1a1a1a; color: #fff; }
+        .btn-action { margin: 0 5px; }
+        .stats-value { font-size: 24px; color: #0f0; }
+        .quick-actions .btn { margin-bottom: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="admin-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1><i class="fas fa-gamepad"></i> Admin Panel</h1>
+                <div>
+                    <a href="/admin/comments" class="btn btn-info">
+                        <i class="fas fa-comments"></i> Comments
+                    </a>
+                    <a href="/admin/ratings" class="btn btn-warning">
+                        <i class="fas fa-star"></i> Ratings
+                    </a>
+                    <a href="/add_game" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Add Game
+                    </a>
+                    <a href="/logout" class="btn btn-danger ml-2">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} flash-message">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Stats Row -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h5><i class="fas fa-gamepad"></i> Total Games</h5>
+                    <div class="stats-value">{{ games|length }}</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h5><i class="fas fa-eye"></i> Active Games</h5>
+                    <div class="stats-value">{{ games|selectattr('visible', 'eq', 1)|list|length }}</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h5><i class="fas fa-mobile-alt"></i> Phone Games</h5>
+                    <div class="stats-value">{{ games|selectattr('filter', 'eq', 'Phone')|list|length }}</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h5><i class="fas fa-desktop"></i> Desktop Games</h5>
+                    <div class="stats-value">{{ games|selectattr('filter', 'eq', 'Desktop')|list|length }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Batch Actions -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="stats-card">
+                    <h5>Batch Actions</h5>
+                    <div class="btn-group">
+                        <button onclick="toggleSelectedGames('hide')" class="btn btn-warning">Hide Selected</button>
+                        <button onclick="toggleSelectedGames('show')" class="btn btn-success">Show Selected</button>
+                        <button onclick="deleteSelectedGames()" class="btn btn-danger">Delete Selected</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Games Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th><input type="checkbox" id="selectAll" onclick="toggleAllGames()"></th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for game in games %}
+                    <tr>
+                        <td><input type="checkbox" class="game-checkbox" value="{{ game.id }}"></td>
+                        <td>{{ game.id }}</td>
+                        <td>{{ game.title }}</td>
+                        <td><span class="badge badge-info">{{ game.filter }}</span></td>
+                        <td>
+                            <span class="badge badge-{{ 'success' if game.visible else 'danger' }}">
+                                {{ 'Visible' if game.visible else 'Hidden' }}
+                            </span>
+                        </td>
+                        <td>
+                            <button onclick="toggleGameVisibility('{{game.id}}')" 
+                                    class="btn btn-warning btn-sm">
+                                <i class="fas fa-eye{{'-slash' if game.visible else ''}}"></i>
+                            </button>
+                            <button onclick="toggleRatings('{{game.id}}')" 
+                                    class="btn btn-info btn-sm">
+                                <i class="fas fa-star{{'-slash' if not game.ratings_visible else ''}}"></i>
+                            </button>
+                            <button onclick="editGame('{{game.id}}')" 
+                                    class="btn btn-primary btn-sm">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button onclick="deleteGame('{{game.id}}')" 
+                                    class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleAllGames() {
+            const mainCheckbox = document.getElementById('selectAll');
+            const checkboxes = document.getElementsByClassName('game-checkbox');
+            for(let checkbox of checkboxes) {
+                checkbox.checked = mainCheckbox.checked;
+            }
+        }
+
+        function getSelectedGameIds() {
+            const checkboxes = document.getElementsByClassName('game-checkbox');
+            return Array.from(checkboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+        }
+
+        function toggleGameVisibility(gameId) {
+            if(confirm('Are you sure you want to toggle this game\'s visibility?')) {
+                submitAction('toggle_visibility', [gameId]);
+            }
+        }
+
+        function toggleRatings(gameId) {
+            if(confirm('Are you sure you want to toggle ratings visibility?')) {
+                submitAction('toggle_ratings', [gameId]);
+            }
+        }
+
+        function editGame(gameId) {
+            window.location.href = '/edit_game/' + gameId;
+        }
+
+        function deleteGame(gameId) {
+            if(confirm('Are you sure you want to delete this game?')) {
+                submitAction('delete', [gameId]);
+            }
+        }
+
+        function toggleSelectedGames(action) {
+            const gameIds = getSelectedGameIds();
+            if(gameIds.length === 0) {
+                alert('Please select games first');
+                return;
+            }
+            submitAction(action, gameIds);
+        }
+
+        function deleteSelectedGames() {
+            const gameIds = getSelectedGameIds();
+            if(gameIds.length === 0) {
+                alert('Please select games first');
+                return;
+            }
+            if(confirm(`Are you sure you want to delete ${gameIds.length} games?`)) {
+                submitAction('delete', gameIds);
+            }
+        }
+
+        function submitAction(action, gameIds) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/admin/action';
+
+            const actionInput = document.createElement('input');
+            actionInput.type = 'hidden';
+            actionInput.name = 'action';
+            actionInput.value = action;
+            form.appendChild(actionInput);
+
+            gameIds.forEach(id => {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'game_ids[]';
+                input.value = id;
+                form.appendChild(input);
+            });
+
+            document.body.appendChild(form);
+            form.submit();
+        }
+    </script>
+</body>
+</html>

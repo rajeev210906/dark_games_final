@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Ratings - Admin Panel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body { background-color: #000; color: #fff; }
+        .rating-card {
+            background: #1a1a1a;
+            border: 1px solid #0f0;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2><i class="fas fa-star"></i> Manage Ratings</h2>
+        
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>Game</th>
+                        <th>Total Ratings</th>
+                        <th>Average Rating</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for rating in ratings %}
+                    <tr>
+                        <td>{{ rating.title }}</td>
+                        <td>{{ rating.total_ratings }}</td>
+                        <td>{{ "%.1f"|format(rating.avg_rating or 0) }} ⭐</td>
+                        <td>
+                            <span class="badge badge-{{ 'success' if rating.ratings_visible else 'danger' }}">
+                                {{ 'Visible' if rating.ratings_visible else 'Hidden' }}
+                            </span>
+                        </td>
+                        <td>
+                            <form action="{{ url_for('admin_action') }}" method="POST" class="d-inline">
+                                <input type="hidden" name="game_id" value="{{ rating.id }}">
+                                <button type="submit" name="action" value="toggle_ratings" 
+                                        class="btn btn-warning btn-sm">
+                                    <i class="fas fa-eye{{ '-slash' if rating.ratings_visible else '' }}"></i>
+                                    {{ 'Hide' if rating.ratings_visible else 'Show' }} Ratings
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Games - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #87CEEB !important;
+            border-bottom: 2px solid #001f3f;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .navbar-brand, .nav-link {
+            color: #001f3f !important;
+            font-weight: bold;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #000 !important;
+        }
+        .navbar .form-control {
+            border: 1px solid #001f3f;
+        }
+        .navbar .btn-outline-success {
+            color: #001f3f;
+            border-color: #001f3f;
+        }
+        .navbar .btn-outline-success:hover {
+            background-color: #001f3f;
+            color: #87CEEB;
+        }
+        .card {
+            background-color: #111;
+            border: 2px solid #0f0;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .btn-primary {
+            background-color: #0f0;
+            border: none;
+            transition: background-color 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0a0;
+        }
+        /* Add these styles */
+        .hover-effect {
+            transition: transform 0.3s;
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .rating {
+            text-align: center;
+        }
+        .stars {
+            display: inline-block;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            cursor: pointer;
+            color: #ddd;
+        }
+        .stars input:checked ~ label {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand fa-gamepad" href="#">Dark Games</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="/?filter=All" class="nav-link">All</a></li>
+            <li class="nav-item"><a href="/?filter=Phone" class="nav-link">Phone</a></li>
+            <li class="nav-item"><a href="/?filter=Desktop" class="nav-link">Desktop</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/search">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search games...">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row games-container grid-view">
+        {% for game in games %}
+        <div class="col-md-4">
+            <div class="card mb-4 hover-effect">
+                <img class="card-img-top" src="{{ game.image }}" alt="{{ game.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ game.title }}</h5>
+                    <p class="card-text">{{ game.text }}</p>
+                    <a href="/game/{{ game.title }}" class="btn btn-primary">Play Now</a>
+                </div>
+                <div class="card-footer">
+                    <div class="rating">
+                        <div class="stars">
+                            <input type="radio" id="star5{{ game.id }}" name="rating{{ game.id }}" value="5">
+                            <label for="star5{{ game.id }}">☆</label>
+                            <input type="radio" id="star4{{ game.id }}" name="rating{{ game.id }}" value="4">
+                            <label for="star4{{ game.id }}">☆</label>
+                            <input type="radio" id="star3{{ game.id }}" name="rating{{ game.id }}" value="3">
+                            <label for="star3{{ game.id }}">☆</label>
+                            <input type="radio" id="star2{{ game.id }}" name="rating{{ game.id }}" value="2">
+                            <label for="star2{{ game.id }}">☆</label>
+                            <input type="radio" id="star1{{ game.id }}" name="rating{{ game.id }}" value="1">
+                            <label for="star1{{ game.id }}">☆</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

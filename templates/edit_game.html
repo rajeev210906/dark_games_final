@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { background-color: #000; color: #fff; }
+        .form-control { background-color: #1a1a1a; color: #fff; border-color: #0f0; }
+        .form-control:focus { background-color: #1a1a1a; color: #fff; border-color: #0f0; box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25); }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Edit Game</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label>Game Image URL:</label>
+                <input type="text" name="image" class="form-control" value="{{ game.image }}" required>
+            </div>
+            <div class="form-group">
+                <label>Game Title:</label>
+                <input type="text" name="title" class="form-control" value="{{ game.title }}" required>
+            </div>
+            <div class="form-group">
+                <label>Game Description:</label>
+                <textarea name="text" class="form-control" required>{{ game.text }}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Game Link:</label>
+                <input type="text" name="link" class="form-control" value="{{ game.link }}" required>
+            </div>
+            <div class="form-group">
+                <label>Category:</label>
+                <select name="filter" class="form-control" required>
+                    <option value="Phone" {% if game.filter == 'Phone' %}selected{% endif %}>Phone</option>
+                    <option value="Desktop" {% if game.filter == 'Desktop' %}selected{% endif %}>Desktop</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Update Game</button>
+            <a href="{{ url_for('admin') }}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

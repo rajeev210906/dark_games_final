@@ -1,0 +1,506 @@
+2024-12-17 01:49:20,487 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 01:49:20,487 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 01:49:27,982 - INFO - 10.240.4.3 - - [17/Dec/2024 01:49:27] "[32mGET /admin HTTP/1.1[0m" 302 -
+2024-12-17 01:49:28,663 - INFO - 10.240.4.3 - - [17/Dec/2024 01:49:28] "GET /login HTTP/1.1" 200 -
+2024-12-17 01:49:32,130 - INFO - 10.240.4.3 - - [17/Dec/2024 01:49:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-17 01:49:32,805 - INFO - 10.240.4.3 - - [17/Dec/2024 01:49:32] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:49:55,550 - INFO - 10.240.4.3 - - [17/Dec/2024 01:49:55] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:49:55,730 - INFO - 10.240.4.3 - - [17/Dec/2024 01:49:55] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:50:02,895 - INFO - 10.240.4.3 - - [17/Dec/2024 01:50:02] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:50:03,086 - INFO - 10.240.4.3 - - [17/Dec/2024 01:50:03] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:08,936 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 01:51:08,937 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 01:51:08,951 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 01:51:09,280 - WARNING -  * Debugger is active!
+2024-12-17 01:51:09,282 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 01:51:11,631 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:11] "[32mGET /admin HTTP/1.1[0m" 302 -
+2024-12-17 01:51:11,812 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:11] "GET /login HTTP/1.1" 200 -
+2024-12-17 01:51:14,146 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-17 01:51:14,459 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:14] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:17,853 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:17] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:20,421 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:20] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:21,573 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:21] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:23,430 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:23] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:25,886 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:25] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:51:26,940 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:26] "GET / HTTP/1.1" 200 -
+2024-12-17 01:51:28,494 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:28] "GET / HTTP/1.1" 200 -
+2024-12-17 01:51:32,690 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:32] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 01:51:33,141 - INFO - 10.240.4.3 - - [17/Dec/2024 01:51:33] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 01:51:57,578 - INFO - 10.240.0.69 - - [17/Dec/2024 01:51:57] "GET / HTTP/1.1" 200 -
+2024-12-17 01:52:26,364 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:26] "[32mGET /admin/dashboard HTTP/1.1[0m" 302 -
+2024-12-17 01:52:26,384 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:26] "GET /login HTTP/1.1" 200 -
+2024-12-17 01:52:33,082 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-17 01:52:33,384 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:33] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:52:48,733 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:48] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:52:48,742 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:48] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:52:51,584 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:51] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:52:51,875 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:51] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:52:55,842 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:55] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:52:55,860 - INFO - 127.0.0.1 - - [17/Dec/2024 01:52:55] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:00,117 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:00] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:00,423 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:00] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:09,750 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:09] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:09,765 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:09] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:12,921 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:12] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:13,231 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:13] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:15,043 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:15] "GET /search?q=Google HTTP/1.1" 200 -
+2024-12-17 01:53:17,644 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:17] "GET /search?q=Google HTTP/1.1" 200 -
+2024-12-17 01:53:22,694 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:22] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:22,706 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:22] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:24,081 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:24] "GET /search?q=Google HTTP/1.1" 200 -
+2024-12-17 01:53:27,001 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:27] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:27,295 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:27] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:28,491 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:28] "GET /search?q=Google HTTP/1.1" 200 -
+2024-12-17 01:53:29,895 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:29] "GET /search?q=Google HTTP/1.1" 200 -
+2024-12-17 01:53:30,495 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:30] "GET / HTTP/1.1" 200 -
+2024-12-17 01:53:36,074 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:36] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:36,090 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:36] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:37,375 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:37] "GET / HTTP/1.1" 200 -
+2024-12-17 01:53:39,053 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:39] "GET / HTTP/1.1" 200 -
+2024-12-17 01:53:41,206 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:41] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:41,503 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:41] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:42,325 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:42] "GET / HTTP/1.1" 200 -
+2024-12-17 01:53:48,034 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:48] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:48,049 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:48] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:48,984 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:48] "GET / HTTP/1.1" 200 -
+2024-12-17 01:53:53,591 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:53] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:53,900 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:53] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:58,256 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:58] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:53:58,275 - INFO - 127.0.0.1 - - [17/Dec/2024 01:53:58] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:53:59,136 - INFO - 10.240.3.196 - - [17/Dec/2024 01:53:59] "GET / HTTP/1.1" 200 -
+2024-12-17 01:54:02,790 - INFO - 10.240.3.196 - - [17/Dec/2024 01:54:02] "GET / HTTP/1.1" 200 -
+2024-12-17 01:54:05,682 - INFO - 10.240.3.196 - - [17/Dec/2024 01:54:05] "GET / HTTP/1.1" 200 -
+2024-12-17 01:56:30,726 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 01:56:30,744 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 01:56:30,747 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 01:56:30,869 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 01:56:31,292 - WARNING -  * Debugger is active!
+2024-12-17 01:56:31,294 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 01:56:39,100 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:39] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:56:43,125 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:43] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:56:45,129 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:45] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:56:46,029 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:46] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:56:46,464 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:46] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:56:51,226 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:51] "GET /edit_game/1 HTTP/1.1" 200 -
+2024-12-17 01:56:54,884 - INFO - 127.0.0.1 - - [17/Dec/2024 01:56:54] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:57:16,575 - INFO - 10.240.2.23 - - [17/Dec/2024 01:57:16] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 01:57:17,769 - INFO - 10.240.2.23 - - [17/Dec/2024 01:57:17] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 01:59:24,995 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 01:59:25,015 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 01:59:25,017 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 01:59:25,613 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 01:59:26,029 - WARNING -  * Debugger is active!
+2024-12-17 01:59:26,030 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 01:59:33,269 - INFO - 127.0.0.1 - - [17/Dec/2024 01:59:33] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:59:36,267 - INFO - 127.0.0.1 - - [17/Dec/2024 01:59:36] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 01:59:40,048 - INFO - 127.0.0.1 - - [17/Dec/2024 01:59:40] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 01:59:45,971 - INFO - 127.0.0.1 - - [17/Dec/2024 01:59:45] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 01:59:46,284 - INFO - 127.0.0.1 - - [17/Dec/2024 01:59:46] "GET /admin HTTP/1.1" 200 -
+2024-12-17 01:59:49,271 - INFO - 127.0.0.1 - - [17/Dec/2024 01:59:49] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:00:04,017 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:04] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:00:04,729 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:04] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:00:08,897 - INFO - 127.0.0.1 - - [17/Dec/2024 02:00:08] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:00:10,688 - INFO - 127.0.0.1 - - [17/Dec/2024 02:00:10] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:00:12,755 - INFO - 127.0.0.1 - - [17/Dec/2024 02:00:12] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:00:16,103 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:16] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:00:16,904 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:16] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:00:18,619 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:18] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:00:18,858 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:18] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:00:22,389 - INFO - 10.240.0.69 - - [17/Dec/2024 02:00:22] "GET / HTTP/1.1" 200 -
+2024-12-17 02:00:43,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:00:43,927 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:00:43,938 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:02:10,641 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:02:10,641 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:02:10,654 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:02:10,981 - WARNING -  * Debugger is active!
+2024-12-17 02:02:10,984 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:02:17,165 - INFO - 10.240.0.69 - - [17/Dec/2024 02:02:17] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:02:17,824 - INFO - 10.240.0.69 - - [17/Dec/2024 02:02:17] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:02:23,229 - INFO - 10.240.0.69 - - [17/Dec/2024 02:02:23] "GET / HTTP/1.1" 200 -
+2024-12-17 02:02:31,191 - INFO - 127.0.0.1 - - [17/Dec/2024 02:02:31] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:02:33,008 - INFO - 127.0.0.1 - - [17/Dec/2024 02:02:33] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:02:55,679 - INFO - 127.0.0.1 - - [17/Dec/2024 02:02:55] "[32mPOST /add_game HTTP/1.1[0m" 302 -
+2024-12-17 02:02:55,972 - INFO - 127.0.0.1 - - [17/Dec/2024 02:02:55] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:03:00,245 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:00] "GET / HTTP/1.1" 200 -
+2024-12-17 02:03:09,197 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:09] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:03:11,217 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:11] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:03:11,229 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:11] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:03:12,713 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:12] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:03:14,562 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:14] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:03:14,570 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:14] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:03:16,048 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:16] "GET / HTTP/1.1" 200 -
+2024-12-17 02:03:18,383 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:18] "GET / HTTP/1.1" 200 -
+2024-12-17 02:03:21,599 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:21] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:03:21,963 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:21] "GET / HTTP/1.1" 200 -
+2024-12-17 02:03:24,305 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:24] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:03:26,690 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:26] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:03:26,699 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:26] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:03:31,064 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:31] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:03:31,543 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:31] "GET / HTTP/1.1" 200 -
+2024-12-17 02:03:33,722 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:33] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:03:36,513 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:36] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:03:36,524 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:36] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:03:43,215 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:43] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:03:43,447 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:43] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:03:47,525 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:47] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:03:47,718 - INFO - 10.240.0.69 - - [17/Dec/2024 02:03:47] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:03:50,565 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:50] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:03:52,118 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:52] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:03:58,841 - INFO - 127.0.0.1 - - [17/Dec/2024 02:03:58] "GET /edit_game/1 HTTP/1.1" 200 -
+2024-12-17 02:04:00,450 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:00] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:04:10,064 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:10] "[33mGET /ratings HTTP/1.1[0m" 404 -
+2024-12-17 02:04:12,944 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:12] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:04:15,703 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:15] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:04:16,018 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:16] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:04:23,232 - INFO - 10.240.3.196 - - [17/Dec/2024 02:04:23] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:04:23,446 - INFO - 10.240.3.196 - - [17/Dec/2024 02:04:23] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:04:25,348 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:25] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:04:26,366 - INFO - 127.0.0.1 - - [17/Dec/2024 02:04:26] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:06:21,130 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:06:21,131 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:06:21,131 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:06:21,475 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:06:21,892 - WARNING -  * Debugger is active!
+2024-12-17 02:06:21,894 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:06:30,725 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:06:30,725 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:06:30,745 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:06:31,201 - WARNING -  * Debugger is active!
+2024-12-17 02:06:31,206 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:06:43,990 - INFO - 127.0.0.1 - - [17/Dec/2024 02:06:43] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:06:45,615 - INFO - 127.0.0.1 - - [17/Dec/2024 02:06:45] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:06:47,734 - INFO - 127.0.0.1 - - [17/Dec/2024 02:06:47] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:06:59,084 - INFO - 127.0.0.1 - - [17/Dec/2024 02:06:59] "[32mPOST /add_game HTTP/1.1[0m" 302 -
+2024-12-17 02:06:59,391 - INFO - 127.0.0.1 - - [17/Dec/2024 02:06:59] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:07:02,603 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:02] "GET / HTTP/1.1" 200 -
+2024-12-17 02:07:07,584 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:07] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:07:08,702 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:08] "GET / HTTP/1.1" 200 -
+2024-12-17 02:07:11,587 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:11] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:07:14,603 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:14] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:07:14,612 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:14] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:07:18,595 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:18] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:07:19,894 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:19] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:07:20,725 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:20] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:07:22,459 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:22] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:07:22,769 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:22] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:07:25,344 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:25] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:07:25,662 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:25] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:07:32,802 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:32] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:07:33,121 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:33] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:07:33,746 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:33] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:07:40,651 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:40] "[32mPOST /game/1/comment HTTP/1.1[0m" 302 -
+2024-12-17 02:07:40,936 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:40] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:07:41,187 - INFO - 10.240.0.69 - - [17/Dec/2024 02:07:41] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:07:43,773 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:43] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:07:53,113 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:53] "[32mPOST /admin/comment/action HTTP/1.1[0m" 302 -
+2024-12-17 02:07:53,127 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:53] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:07:55,910 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:55] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:07:57,440 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:57] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:07:59,937 - INFO - 127.0.0.1 - - [17/Dec/2024 02:07:59] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:08:00,247 - INFO - 127.0.0.1 - - [17/Dec/2024 02:08:00] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:08:12,604 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:12] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:08:12,831 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:12] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:08:25,333 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:25] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:08:25,949 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:25] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:08:27,900 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:27] "GET / HTTP/1.1" 200 -
+2024-12-17 02:08:30,362 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:30] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:08:30,590 - INFO - 10.240.0.69 - - [17/Dec/2024 02:08:30] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:08:48,825 - INFO - 127.0.0.1 - - [17/Dec/2024 02:08:48] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:08:49,992 - INFO - 127.0.0.1 - - [17/Dec/2024 02:08:49] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:08:50,000 - INFO - 127.0.0.1 - - [17/Dec/2024 02:08:50] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:09:31,802 - INFO - 127.0.0.1 - - [17/Dec/2024 02:09:31] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:09:32,590 - INFO - 127.0.0.1 - - [17/Dec/2024 02:09:32] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:09:32,600 - INFO - 127.0.0.1 - - [17/Dec/2024 02:09:32] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:12:16,029 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:12:16,031 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:12:16,859 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:12:17,306 - WARNING -  * Debugger is active!
+2024-12-17 02:12:17,309 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:12:21,669 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:21] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:12:22,595 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:22] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:12:29,678 - INFO - 127.0.0.1 - - [17/Dec/2024 02:12:29] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:12:37,569 - INFO - 127.0.0.1 - - [17/Dec/2024 02:12:37] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:12:37,579 - INFO - 127.0.0.1 - - [17/Dec/2024 02:12:37] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:12:41,788 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:41] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:12:42,371 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:42] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:12:46,599 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:46] "GET / HTTP/1.1" 200 -
+2024-12-17 02:12:49,008 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:49] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:12:49,522 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:49] "GET / HTTP/1.1" 200 -
+2024-12-17 02:12:51,489 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:51] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:12:51,784 - INFO - 10.240.2.23 - - [17/Dec/2024 02:12:51] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:12:59,270 - INFO - 127.0.0.1 - - [17/Dec/2024 02:12:59] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:13:01,771 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:01] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:13:01,779 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:01] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:13:03,643 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:03] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:13:05,224 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:05] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:13:05,232 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:05] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:13:10,905 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:10] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:13:10,923 - INFO - 127.0.0.1 - - [17/Dec/2024 02:13:10] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:13:17,506 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:17] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:13:17,917 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:17] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:13:22,009 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:22] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:13:22,354 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:22] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:13:22,668 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:22] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:13:25,160 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:25] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:13:25,504 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:25] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:13:25,744 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:25] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:13:28,124 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:28] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:13:28,564 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:28] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:13:28,817 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:28] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:13:31,116 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:31] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:13:31,436 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:31] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:13:31,708 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:31] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:13:34,093 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:34] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:13:34,487 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:34] "GET /game/S%20S HTTP/1.1" 200 -
+2024-12-17 02:13:34,717 - INFO - 10.240.2.23 - - [17/Dec/2024 02:13:34] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:14:43,640 - INFO - 127.0.0.1 - - [17/Dec/2024 02:14:43] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:15:29,462 - INFO - 10.240.4.3 - - [17/Dec/2024 02:15:29] "GET / HTTP/1.1" 200 -
+2024-12-17 02:16:39,074 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:16:39,074 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:16:39,075 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:16:39,789 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:16:40,200 - WARNING -  * Debugger is active!
+2024-12-17 02:16:40,203 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:17:00,182 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:17:00,183 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:17:00,195 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:17:00,522 - WARNING -  * Debugger is active!
+2024-12-17 02:17:00,524 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:17:03,399 - INFO - 10.240.4.3 - - [17/Dec/2024 02:17:03] "GET / HTTP/1.1" 200 -
+2024-12-17 02:17:13,847 - INFO - 10.240.4.3 - - [17/Dec/2024 02:17:13] "GET / HTTP/1.1" 200 -
+2024-12-17 02:17:22,691 - INFO - 127.0.0.1 - - [17/Dec/2024 02:17:22] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:17:24,453 - INFO - 127.0.0.1 - - [17/Dec/2024 02:17:24] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:17:26,623 - INFO - 127.0.0.1 - - [17/Dec/2024 02:17:26] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:17:43,882 - INFO - 127.0.0.1 - - [17/Dec/2024 02:17:43] "[32mPOST /add_game HTTP/1.1[0m" 302 -
+2024-12-17 02:17:44,175 - INFO - 127.0.0.1 - - [17/Dec/2024 02:17:44] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:17:47,870 - INFO - 10.240.4.3 - - [17/Dec/2024 02:17:47] "GET / HTTP/1.1" 200 -
+2024-12-17 02:17:50,642 - INFO - 10.240.4.3 - - [17/Dec/2024 02:17:50] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:17:50,944 - INFO - 10.240.4.3 - - [17/Dec/2024 02:17:50] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:18:01,468 - INFO - 10.240.4.3 - - [17/Dec/2024 02:18:01] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:18:02,075 - INFO - 10.240.4.3 - - [17/Dec/2024 02:18:02] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:18:05,845 - INFO - 127.0.0.1 - - [17/Dec/2024 02:18:05] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:18:07,109 - INFO - 127.0.0.1 - - [17/Dec/2024 02:18:07] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:19:01,284 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:01] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:19:01,505 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:01] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:19:08,110 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:08] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:19:08,376 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:08] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:19:08,789 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:08] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:19:11,191 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:11] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:19:11,439 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:11] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:19:11,875 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:11] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:19:13,843 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:13] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:19:14,143 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:14] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:19:14,388 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:14] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:19:30,564 - INFO - 10.240.4.3 - - [17/Dec/2024 02:19:30] "GET / HTTP/1.1" 200 -
+2024-12-17 02:20:32,261 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:32] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:20:34,608 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:34] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:20:34,619 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:34] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:20:35,923 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:35] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:20:37,017 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:37] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:20:37,028 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:37] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:20:38,325 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:38] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:20:39,380 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:39] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:20:49,254 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:49] "GET /edit_game/1 HTTP/1.1" 200 -
+2024-12-17 02:20:50,804 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:50] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:20:52,383 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:52] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:20:53,565 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:53] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:20:54,490 - INFO - 127.0.0.1 - - [17/Dec/2024 02:20:54] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:21:13,994 - INFO - 127.0.0.1 - - [17/Dec/2024 02:21:13] "[32mPOST /add_game HTTP/1.1[0m" 302 -
+2024-12-17 02:21:14,291 - INFO - 127.0.0.1 - - [17/Dec/2024 02:21:14] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:21:20,830 - INFO - 10.240.3.196 - - [17/Dec/2024 02:21:20] "GET / HTTP/1.1" 200 -
+2024-12-17 02:21:23,148 - INFO - 10.240.3.196 - - [17/Dec/2024 02:21:23] "GET /game/monkey-run HTTP/1.1" 200 -
+2024-12-17 02:21:23,865 - INFO - 10.240.3.196 - - [17/Dec/2024 02:21:23] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:22:17,156 - INFO - 10.240.3.196 - - [17/Dec/2024 02:22:17] "GET / HTTP/1.1" 200 -
+2024-12-17 02:22:43,583 - INFO - 127.0.0.1 - - [17/Dec/2024 02:22:43] "GET /edit_game/2 HTTP/1.1" 200 -
+2024-12-17 02:22:57,760 - INFO - 127.0.0.1 - - [17/Dec/2024 02:22:57] "[32mPOST /edit_game/2 HTTP/1.1[0m" 302 -
+2024-12-17 02:22:57,770 - INFO - 127.0.0.1 - - [17/Dec/2024 02:22:57] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:23:09,129 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:09] "[32mPOST /rate/1 HTTP/1.1[0m" 302 -
+2024-12-17 02:23:09,455 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:09] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:23:10,071 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:10] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:23:20,023 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:20] "[32mPOST /game/1/comment HTTP/1.1[0m" 302 -
+2024-12-17 02:23:20,734 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:20] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:23:21,495 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:21] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:23:25,091 - INFO - 127.0.0.1 - - [17/Dec/2024 02:23:25] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:23:40,700 - INFO - 127.0.0.1 - - [17/Dec/2024 02:23:40] "[32mPOST /admin/comment/action HTTP/1.1[0m" 302 -
+2024-12-17 02:23:40,715 - INFO - 127.0.0.1 - - [17/Dec/2024 02:23:40] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:23:44,332 - INFO - 127.0.0.1 - - [17/Dec/2024 02:23:44] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:23:46,032 - INFO - 127.0.0.1 - - [17/Dec/2024 02:23:46] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:23:47,992 - INFO - 127.0.0.1 - - [17/Dec/2024 02:23:47] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:23:49,972 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:49] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:23:50,358 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:50] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:23:58,940 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:58] "[32mPOST /admin/comment/action HTTP/1.1[0m" 302 -
+2024-12-17 02:23:59,144 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:59] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:23:59,771 - INFO - 10.240.3.196 - - [17/Dec/2024 02:23:59] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:24:03,885 - INFO - 127.0.0.1 - - [17/Dec/2024 02:24:03] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:24:05,291 - INFO - 127.0.0.1 - - [17/Dec/2024 02:24:05] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:24:06,517 - INFO - 127.0.0.1 - - [17/Dec/2024 02:24:06] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:24:13,655 - INFO - 10.240.3.196 - - [17/Dec/2024 02:24:13] "GET / HTTP/1.1" 200 -
+2024-12-17 02:32:44,280 - INFO - 10.240.2.23 - - [17/Dec/2024 02:32:44] "GET / HTTP/1.1" 200 -
+2024-12-17 02:32:45,042 - INFO - 10.240.2.23 - - [17/Dec/2024 02:32:45] "[33mGET /assets/logo.png HTTP/1.1[0m" 404 -
+2024-12-17 02:33:29,143 - INFO - 10.240.2.23 - - [17/Dec/2024 02:33:29] "GET / HTTP/1.1" 200 -
+2024-12-17 02:33:39,779 - INFO - 10.240.2.23 - - [17/Dec/2024 02:33:39] "GET /search?q=Money HTTP/1.1" 200 -
+2024-12-17 02:33:42,466 - INFO - 10.240.2.23 - - [17/Dec/2024 02:33:42] "GET / HTTP/1.1" 200 -
+2024-12-17 02:33:44,110 - INFO - 10.240.2.23 - - [17/Dec/2024 02:33:44] "GET / HTTP/1.1" 200 -
+2024-12-17 02:33:45,624 - INFO - 10.240.2.23 - - [17/Dec/2024 02:33:45] "GET /game/Money%20Stack%20Run HTTP/1.1" 200 -
+2024-12-17 02:33:45,870 - INFO - 10.240.2.23 - - [17/Dec/2024 02:33:45] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:40:08,486 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:40:08,486 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:40:08,501 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:40:08,881 - WARNING -  * Debugger is active!
+2024-12-17 02:40:08,883 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:40:10,897 - INFO - 10.240.4.3 - - [17/Dec/2024 02:40:10] "GET / HTTP/1.1" 200 -
+2024-12-17 02:40:15,015 - INFO - 10.240.4.3 - - [17/Dec/2024 02:40:15] "GET / HTTP/1.1" 200 -
+2024-12-17 02:40:18,435 - INFO - 10.240.4.3 - - [17/Dec/2024 02:40:18] "GET / HTTP/1.1" 200 -
+2024-12-17 02:41:08,248 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:08] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:41:19,858 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:19] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:41:24,789 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:24] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:41:26,457 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:26] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:41:28,066 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:28] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:41:30,964 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:30] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 02:41:31,178 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:31] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:41:58,198 - INFO - 10.240.4.3 - - [17/Dec/2024 02:41:58] "GET /edit_game/2 HTTP/1.1" 200 -
+2024-12-17 02:42:03,230 - INFO - 10.240.4.3 - - [17/Dec/2024 02:42:03] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:42:05,943 - INFO - 10.240.4.3 - - [17/Dec/2024 02:42:05] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:42:22,555 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:42:22,555 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:42:22,569 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:42:22,953 - WARNING -  * Debugger is active!
+2024-12-17 02:42:22,955 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:42:31,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:42:31,705 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:42:31,723 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:42:32,090 - WARNING -  * Debugger is active!
+2024-12-17 02:42:32,092 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:42:34,212 - INFO - 127.0.0.1 - - [17/Dec/2024 02:42:34] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:42:41,611 - INFO - 127.0.0.1 - - [17/Dec/2024 02:42:41] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:42:43,758 - INFO - 127.0.0.1 - - [17/Dec/2024 02:42:43] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:42:57,526 - INFO - 127.0.0.1 - - [17/Dec/2024 02:42:57] "[32mPOST /add_game HTTP/1.1[0m" 302 -
+2024-12-17 02:42:57,819 - INFO - 127.0.0.1 - - [17/Dec/2024 02:42:57] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:43:03,695 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:03] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:43:09,106 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:09] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:43:10,039 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:10] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:43:27,011 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:27] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:43:28,190 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:28] "GET / HTTP/1.1" 200 -
+2024-12-17 02:43:29,809 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:29] "GET / HTTP/1.1" 200 -
+2024-12-17 02:43:35,860 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:35] "GET /game/Subway%20surfers HTTP/1.1" 200 -
+2024-12-17 02:43:36,464 - INFO - 10.240.4.3 - - [17/Dec/2024 02:43:36] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:43:42,467 - INFO - 10.240.1.34 - - [17/Dec/2024 02:43:42] "GET / HTTP/1.1" 200 -
+2024-12-17 02:44:36,164 - INFO - 10.240.1.34 - - [17/Dec/2024 02:44:36] "GET / HTTP/1.1" 200 -
+2024-12-17 02:44:50,164 - INFO - 10.240.1.34 - - [17/Dec/2024 02:44:50] "GET / HTTP/1.1" 200 -
+2024-12-17 02:45:06,133 - INFO - 10.240.1.34 - - [17/Dec/2024 02:45:06] "GET /game/Subway%20surfers HTTP/1.1" 200 -
+2024-12-17 02:45:06,410 - INFO - 10.240.1.34 - - [17/Dec/2024 02:45:06] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:45:18,349 - INFO - 10.240.1.34 - - [17/Dec/2024 02:45:18] "GET / HTTP/1.1" 200 -
+2024-12-17 02:45:22,616 - INFO - 10.240.1.34 - - [17/Dec/2024 02:45:22] "GET / HTTP/1.1" 200 -
+2024-12-17 02:45:29,715 - INFO - 127.0.0.1 - - [17/Dec/2024 02:45:29] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 02:45:32,575 - INFO - 127.0.0.1 - - [17/Dec/2024 02:45:32] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 02:45:35,058 - INFO - 127.0.0.1 - - [17/Dec/2024 02:45:35] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:50:43,840 - INFO - 10.240.1.34 - - [17/Dec/2024 02:50:43] "GET / HTTP/1.1" 200 -
+2024-12-17 02:50:46,745 - INFO - 10.240.1.34 - - [17/Dec/2024 02:50:46] "GET / HTTP/1.1" 200 -
+2024-12-17 02:52:35,214 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:52:35,216 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:52:35,218 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:52:36,150 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:52:36,536 - WARNING -  * Debugger is active!
+2024-12-17 02:52:36,538 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:52:37,140 - INFO - 10.240.2.23 - - [17/Dec/2024 02:52:37] "GET / HTTP/1.1" 200 -
+2024-12-17 02:52:39,542 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2024-12-17 02:52:39,543 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\anaconda3\\Lib\\site-packages\\werkzeug\\middleware\\proxy_fix.py', reloading
+2024-12-17 02:52:39,544 - INFO - 10.240.2.23 - - [17/Dec/2024 02:52:39] "[35m[1mGET /game/Subway%20surfers HTTP/1.1[0m" 500 -
+2024-12-17 02:52:39,600 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:52:39,941 - WARNING -  * Debugger is active!
+2024-12-17 02:52:39,943 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:52:40,347 - INFO - 127.0.0.1 - - [17/Dec/2024 02:52:40] "GET /game/Subway%20surfers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-17 02:52:40,372 - INFO - 127.0.0.1 - - [17/Dec/2024 02:52:40] "GET /game/Subway%20surfers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-17 02:52:41,159 - INFO - 127.0.0.1 - - [17/Dec/2024 02:52:41] "GET /game/Subway%20surfers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-17 02:52:44,486 - INFO - 10.240.2.23 - - [17/Dec/2024 02:52:44] "GET / HTTP/1.1" 200 -
+2024-12-17 02:52:59,162 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080
+2024-12-17 02:52:59,162 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 02:52:59,179 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:52:59,494 - WARNING -  * Debugger is active!
+2024-12-17 02:52:59,496 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:53:00,284 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:00] "GET / HTTP/1.1" 200 -
+2024-12-17 02:53:06,966 - INFO - 127.0.0.1 - - [17/Dec/2024 02:53:06] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:53:08,264 - INFO - 127.0.0.1 - - [17/Dec/2024 02:53:08] "GET /add_game HTTP/1.1" 200 -
+2024-12-17 02:53:20,975 - INFO - 127.0.0.1 - - [17/Dec/2024 02:53:20] "[32mPOST /add_game HTTP/1.1[0m" 302 -
+2024-12-17 02:53:21,275 - INFO - 127.0.0.1 - - [17/Dec/2024 02:53:21] "GET /admin HTTP/1.1" 200 -
+2024-12-17 02:53:24,502 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:24] "GET / HTTP/1.1" 200 -
+2024-12-17 02:53:26,531 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:26] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:53:26,754 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:26] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:53:30,691 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:30] "GET / HTTP/1.1" 200 -
+2024-12-17 02:53:32,175 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:32] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:53:32,851 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:32] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:53:34,514 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:34] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:53:34,790 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:34] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:53:36,602 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:36] "GET / HTTP/1.1" 200 -
+2024-12-17 02:53:38,515 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:38] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:53:39,000 - INFO - 10.240.2.23 - - [17/Dec/2024 02:53:39] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 02:55:59,319 - INFO - 10.240.0.69 - - [17/Dec/2024 02:55:59] "GET / HTTP/1.1" 200 -
+2024-12-17 02:57:20,950 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:57:20,967 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:57:20,968 - INFO -  * Detected change in 'C:\\Users\\Rajeev Ranjan\\OneDrive - brainwareuniversity.ac.in\\RAJEEV RANJAN\\Coding\\Projects\\dark_games_final\\app.py', reloading
+2024-12-17 02:57:21,958 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 02:57:22,330 - WARNING -  * Debugger is active!
+2024-12-17 02:57:22,332 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 02:57:23,508 - INFO - 10.240.3.196 - - [17/Dec/2024 02:57:23] "GET / HTTP/1.1" 200 -
+2024-12-17 02:57:34,864 - INFO - 10.240.3.196 - - [17/Dec/2024 02:57:34] "GET /game/Subway%20Surfers HTTP/1.1" 200 -
+2024-12-17 02:57:35,544 - INFO - 10.240.3.196 - - [17/Dec/2024 02:57:35] "[33mGET /static/css/dark.css HTTP/1.1[0m" 404 -
+2024-12-17 03:02:03,466 - INFO - 127.0.0.1 - - [17/Dec/2024 03:02:03] "GET /admin HTTP/1.1" 200 -
+2024-12-17 09:25:33,786 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.170.199:8080
+2024-12-17 09:25:33,786 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 09:25:33,804 - INFO -  * Restarting with watchdog (windowsapi)
+2024-12-17 09:25:34,113 - WARNING -  * Debugger is active!
+2024-12-17 09:25:34,134 - INFO -  * Debugger PIN: 170-743-307
+2024-12-17 09:25:48,511 - INFO - 127.0.0.1 - - [17/Dec/2024 09:25:48] "[32mGET /admin/comments HTTP/1.1[0m" 302 -
+2024-12-17 09:25:48,558 - INFO - 127.0.0.1 - - [17/Dec/2024 09:25:48] "GET /login HTTP/1.1" 200 -
+2024-12-17 09:25:48,746 - INFO - 127.0.0.1 - - [17/Dec/2024 09:25:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-17 09:25:53,850 - INFO - 127.0.0.1 - - [17/Dec/2024 09:25:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-17 09:25:53,881 - INFO - 127.0.0.1 - - [17/Dec/2024 09:25:53] "GET /admin HTTP/1.1" 200 -
+2024-12-17 09:26:23,350 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:23] "GET /admin/comments HTTP/1.1" 200 -
+2024-12-17 09:26:24,903 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:24] "GET /admin HTTP/1.1" 200 -
+2024-12-17 09:26:25,522 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:25] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 09:26:27,058 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:27] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 09:26:27,369 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:27] "GET /admin HTTP/1.1" 200 -
+2024-12-17 09:26:29,395 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:29] "GET /admin/ratings HTTP/1.1" 200 -
+2024-12-17 09:26:30,173 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:30] "[32mPOST /admin/action HTTP/1.1[0m" 302 -
+2024-12-17 09:26:30,187 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:30] "GET /admin HTTP/1.1" 200 -
+2024-12-17 09:26:52,538 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:52] "GET / HTTP/1.1" 200 -
+2024-12-17 09:26:55,027 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:55] "GET /?filter=Desktop HTTP/1.1" 200 -
+2024-12-17 09:26:57,846 - INFO - 127.0.0.1 - - [17/Dec/2024 09:26:57] "GET /?filter=All HTTP/1.1" 200 -
+2024-12-17 09:27:06,751 - INFO - 127.0.0.1 - - [17/Dec/2024 09:27:06] "GET /?filter=All HTTP/1.1" 200 -
+2024-12-17 09:28:53,481 - INFO - 127.0.0.1 - - [17/Dec/2024 09:28:53] "GET /?filter=All HTTP/1.1" 200 -
+2024-12-17 09:28:56,057 - INFO - 127.0.0.1 - - [17/Dec/2024 09:28:56] "GET /?filter=All HTTP/1.1" 200 -
+2024-12-17 09:33:26,120 - INFO - 127.0.0.1 - - [17/Dec/2024 09:33:26] "GET /?filter=All HTTP/1.1" 200 -

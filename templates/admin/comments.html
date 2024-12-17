@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Comments - Admin Panel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body { background-color: #000; color: #fff; }
+        .comment-card {
+            background: #1a1a1a;
+            border: 1px solid #0f0;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .reply-form { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2><i class="fas fa-comments"></i> Manage Comments</h2>
+            <a href="{{ url_for('admin') }}" class="btn btn-primary">
+                <i class="fas fa-arrow-left"></i> Back to Admin
+            </a>
+        </div>
+
+        {% for comment in comments %}
+        <div class="comment-card">
+            <div class="d-flex justify-content-between">
+                <h5>{{ comment.game_title }}</h5>
+                <small>{{ comment.timestamp }}</small>
+            </div>
+            <p><strong>{{ comment.user_name }}:</strong> {{ comment.comment }}</p>
+            
+            <div class="btn-group">
+                <form action="{{ url_for('comment_action') }}" method="POST" class="d-inline">
+                    <input type="hidden" name="comment_id" value="{{ comment.id }}">
+                    <button type="submit" name="action" value="{{ 'show' if not comment.visible else 'hide' }}" 
+                            class="btn btn-warning btn-sm">
+                        <i class="fas fa-eye{{ '-slash' if comment.visible else '' }}"></i>
+                        {{ 'Show' if not comment.visible else 'Hide' }}
+                    </button>
+                    <button type="submit" name="action" value="delete" 
+                            class="btn btn-danger btn-sm"
+                            onclick="return confirm('Are you sure?')">
+                        <i class="fas fa-trash"></i> Delete
+                    </button>
+                    <button type="button" onclick="toggleReplyForm('{{ comment.id }}')"
+                            class="btn btn-primary btn-sm">
+                        <i class="fas fa-reply"></i> Reply
+                    </button>
+                </form>
+            </div>
+
+            <div id="replyForm{{ comment.id }}" class="reply-form mt-3">
+                <form action="{{ url_for('comment_action') }}" method="POST">
+                    <input type="hidden" name="comment_id" value="{{ comment.id }}">
+                    <input type="hidden" name="action" value="reply">
+                    <div class="form-group">
+                        <textarea name="reply" class="form-control" rows="2" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-sm">Submit Reply</button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        function toggleReplyForm(commentId) {
+            const form = document.getElementById('replyForm' + commentId);
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

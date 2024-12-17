@@ -1,0 +1,22 @@
+<div class="row">
+    <!-- ...existing code... -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>View Statistics</h5>
+            </div>
+            <div class="card-body">
+                <p>Total Views: {{ total_views }}</p>
+                <h6>Most Viewed Games:</h6>
+                <ul class="list-group">
+                    {% for game in most_viewed %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ game.title }}
+                        <span class="badge badge-primary badge-pill">{{ game.views }} views</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
